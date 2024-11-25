@@ -1,0 +1,65 @@
+/* Estilos gerais para a tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  thead {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  th {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  tbody tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  
+  tbody td {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* Estilo de número e preço (opcional) */
+  td:nth-child(4), td:nth-child(5) {
+    text-align: right;
+  }
+  
+  td:nth-child(5) {
+    font-weight: bold;
+    color: #28a745;
+  }
+  
+  /* Adicionando uma borda arredondada */
+  table {
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  /* Opcional: Estilo de exibição de cabeçalho fixo */
+  thead th {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #007bff;
+  }
+  
+  

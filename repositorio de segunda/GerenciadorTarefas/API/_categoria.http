@@ -1,0 +1,13 @@
+### Requisição para a raiz da aplicação
+GET http://localhost:5267
+
+### Listar categorias
+GET http://localhost:5267/api/categoria/listar
+
+### Cadastrar categoria
+POST http://localhost:5267/api/categoria/cadastrar
+Content-Type: application/json
+
+{
+    "nome": "Faculdade"
+}

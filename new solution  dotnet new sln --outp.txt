@@ -1,0 +1,40 @@
+new solution : dotnet new sln --output nome
+web api : dotnet new web --name nome
+
+adicionar projeto na solução : dotnet sln add nomedoprojeto
+
+dotnet add packge Microsoft.EntityFrameworkCore.Sqlite
+dotnet add packge Microsoft.EntityFrameworkCore.Design
+
+using System;
+using Microsoft.EntityFrameworkCore;
+
+namespace API.Models;
+public class AppDataContext : DbContext
+{
+    public AppDataContext(DbContextOptions<AppDataContext> options) : base(options) {}
+
+    public DbSet<Tarefa> Tarefas {get; set;}
+    public DbSet<Lista> Listas {get; set;}
+
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    {
+        optionsBuilder.UseSqlite("Data Source=Lista.db");
+    }
+}
+
+dotnet tool install --global dotnet-ef
+
+dotnet ef migrations add NomeMigração
+dotnet ef database update
+
+
+npx create-react-app my-app --template typescript
+npm start
+npm i
+
+fazer as cors
+
+npm install @types/react-router-dom
+npm install react-router-dom
+npm install axios

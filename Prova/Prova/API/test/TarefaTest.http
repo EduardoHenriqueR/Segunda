@@ -1,0 +1,27 @@
+###
+POST http://localhost:5208/api/tarefa/cadastrar
+Content-Type: application/json
+
+{
+    "nome" : "limpar o vaso",
+    "descricao" : "Passar produto no vaso",
+    "status" : "Em andamento",
+    "emAndamento" : true,
+    "listaId" : 1
+
+}
+
+###
+GET http://localhost:5208/api/tarefa/listar
+
+###
+PUT http://localhost:5208/api/tarefa/andamento/1
+
+###
+PUT http://localhost:5208/api/tarefa/deletar/1
+
+###
+GET http://localhost:5208/api/tarefa/concluidas
+
+###
+GET http://localhost:5208/api/tarefa/emandamento
