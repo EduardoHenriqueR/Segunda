@@ -1,0 +1,13 @@
+###
+POST http://localhost:5208/api/lista/cadastrar
+Content-Type: application/json
+
+{
+    "nome" : "Limpar banheiro"
+}
+
+###
+GET http://localhost:5208/api/lista/listar
+
+###
+DELETE  http://localhost:5208/api/lista/deletar/1
